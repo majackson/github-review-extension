@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "GitHub Code Review Assistant",
+    "description": "Tool for assisting developers see code review progress at a glance.",
+    "version": "0.21",
+    "content_scripts": [{
+        "matches": [
+            "*://github.com/*/*/pulls/*",
+            "*://github.com/*/*/pulls*"
+        ],
+        "js": ["script/content.js"]
+    }]
+}
